@@ -56,3 +56,10 @@ To include .js external file, use src attribute inside script tag then give name
 </script>
 
 
+; semicolon is used to seperate the statement
+
+single line command should be in double slash // then command
+multi line command should be in /* multiple lines */
+
+
+
