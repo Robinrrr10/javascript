@@ -1,0 +1,1 @@
+document.write("Hello every one. this is external file")

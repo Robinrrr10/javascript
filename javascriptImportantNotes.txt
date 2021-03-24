@@ -1,0 +1,58 @@
+node js is used for backend
+react js is used for frontend
+react js is used for web and mobile application
+react native is used for android and ios application
+angular js is used for mvc model. used for single page application
+electron js used to build cross platform for desktop applications(build with javascript, html and css)
+react vr used to create virtual reality applications
+tensorflow js used for machine learning framework
+
+
+HTML, CSS, JAVASCRIPT
+
+Document Object Model (DOM)
+
+Element node - different html tags
+Attribute node - different attribute in each tag
+Text node - text which is needs to display
+
+Eg:
+<div id="mypage">How are you</div>
+
+here div is element node
+id is attribute node
+"How are you" is text node
+
+
+
+visual stdio and chrome is enough for learning
+
+To add javascript code, we can use <script> tag in html  
+We can directly write code inside <script> tag or else we can call .js file in script
+
+<script type="text/javascript">  // default it will take text/javascript only. but it is better to mension type
+
+</script>
+
+Eg:
+<script type="text/javascript">
+	document.write("Hollo world")
+</script>
+
+document is the object of entire html
+write() is the inbuild method of document
+
+document.write("<h1>Hollo world<h1>")
+
+
+
+We can write <script> tag in any where in html
+if it has more lines of javascript code better add at end of the html file. this will improve performance
+
+
+To include .js external file, use src attribute inside script tag then give name of the file
+<script src="myfile.js" type="text/javascript">
+
+</script>
+
+
