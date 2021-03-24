@@ -61,5 +61,55 @@ To include .js external file, use src attribute inside script tag then give name
 single line command should be in double slash // then command
 multi line command should be in /* multiple lines */
 
+//use live server extension in visual studio. we no need to reload the browser. just click live, it will reload automatically'
+
+
+
+Data type in javascripts:
+---------------
+1. primitive datatypes
+2. trivial/other  datatypes
+3. Composite datatypes
+
+Primitive datatypes:
+--
+Number
+String
+Boolean
+
+Trivial / other datatypes:
+-------
+null
+undefined
+
+Composite datatypes:
+-----------
+Objects
+Arrays
+
+
+
+Javascript is loosely typed programming language
+Javascript is dynamically typed scripting language
+
+
+
+var num = 34;
+var name = "Ram";
+var isName = true;
+
+var x; //declaration
+x = 12; //initialization
+
+variable name should not be predefined keyword
+variable name can start with letter, underscore _ or dollor $
+case sensitive
+
+
+to show alert message in browser
+alert("message");
+
+
+
 
 
