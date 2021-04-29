@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        var a = 5;
+        var b = 7;
+        var c = 2;
+        var result = a + b;
+        document.write("<h1>result 1 is "+result+"</h1>");
+        var result2 = a + b + c;
+        document.write("<h1>result 2 is " + result2 + "</h1>");
+        var result3 = a + b + "hello"; //5 + 7 + "hello" => 12 + "hello" => 12hello
+        document.write("<h1>result 3 is " + result3 + "</h1>");
+        var result4 = "hello" + a + b; //"hello" + 5 + 7 => "hello" + "5" + "7" => hello57
+        document.write("<h1>result 4 is " + result4 + "</h1>");
+        var result5 = a + b + "hello" + a + c; //5 + 7 + "hello" + 5 + 2 => 12 + "hello" + 5 + 2 => "12hello" + "5" + "2" => 12hello52
+        document.write("<h1>result 5 is " + result5 + "</h1>");
+        var result6 = a + b * c; // 5 + (7 * 2) => 5 + 14 => 19
+        document.write("<h1>result 6 is " + result6 + "</h1>");
+        var result7 = (a + b) * c; // (5 + 7) * 2 => 12 * 2 => 24
+        document.write("<h1>result 7 is " + result7 + "</h1>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
