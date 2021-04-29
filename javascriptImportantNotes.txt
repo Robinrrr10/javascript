@@ -126,6 +126,23 @@ type operators   typeof, instanceof
 bitwise operators  &, |, ~, ^, <<, >>, >>>
 
 
+Control statement
+----------------
+conditions:
+if else
+switch
+
+looping:
+for loop
+while loop
+do while loop
+for in loop
+
+others:
+break
+continue
+
+
 
 
 
