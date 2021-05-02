@@ -142,6 +142,13 @@ others:
 break
 continue
 
+in javascript switch case can accept number, string or boolean value
+
+inside switch input we can do some operation also Eg: switch(num + 2)
+
+
+
+
 
 
 
