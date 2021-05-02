@@ -148,6 +148,10 @@ inside switch input we can do some operation also Eg: switch(num + 2)
 
 
 
+for loop
+for(;;) - this is infinite loop. 
+
+
 
 
 
