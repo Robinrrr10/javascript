@@ -152,6 +152,26 @@ for loop
 for(;;) - this is infinite loop. 
 
 
+Functions:
+---
+
+function nameOfFunction()
+{
+
+}
+
+funcation with paramter:
+function add(a, b)
+{
+
+}
+
+function with return type:
+function add(a, b)
+{
+  var tot = a + b;
+  return tot;
+}
 
 
 

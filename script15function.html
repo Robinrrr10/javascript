@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       document.write("<h3>functions</h3>");
+       function printName()
+       {
+           document.write("<h5>Ram</h5>");
+       }
+
+       function addAndPrint(a, b)
+       {
+           var res = a + b;
+           document.write("<h5>total is: "+res+"</h5>");
+       }
+
+       function add(a, b)
+       {
+           var res = a + b;
+           return res;
+       }
+
+       printName();
+       addAndPrint(5, 17);
+       addAndPrint("man", "power");
+       var tot = add(8, 4);
+       document.write("<h5>add is:"+tot+"</h5>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
