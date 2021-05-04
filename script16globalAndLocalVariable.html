@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       document.write("<h3>Global & local variable</h3>");
+       var x = 20; //global variable
+       var y = 20;
+       t = 34; //Variable without var keyword. This is global variable
+       function nyFunctions()
+       {
+           document.write("<h5>x:"+x+"</h5>");
+           var y = 23; //local variable
+           document.write("<h5>y:"+y+"</h5>");
+           var k = 12; //local variable
+           document.write("<h5>k:"+y+"</h5>");
+           document.write("<h5>t:"+t+"</h5>");
+       }
+
+       nyFunctions();
+       document.write("<h5>x:"+x+"</h5>");
+       document.write("<h5>y:"+y+"</h5>");
+       document.write("<h5>t:"+t+"</h5>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

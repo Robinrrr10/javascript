@@ -109,6 +109,8 @@ variable name should not be predefined keyword
 variable name can start with letter, underscore _ or dollor $
 case sensitive
 
+even we dont give var keyword, it will still work
+Eg: num = 78     //but this will be global variable
 
 to show alert message in browser
 alert("message");
@@ -175,5 +177,15 @@ function add(a, b)
 
 
 
+local & global variables:
+variable created inside function is local variable. It can be used with in the function
+variable created outside the function is global variable. It can used inside and outside the function
 
 
+
+
+arrays:
+--
+var cars = ["bmw", "swift", "volvo"];
+or
+var cars = new Array("bmw", "swift", "volvo");

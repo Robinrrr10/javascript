@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       document.write("<h3>Array</h3>");
+       var animals = ["lions", "tiger", "rat", "bear", "fox"];
+       for(var i=0;i<animals.length;i++)
+       {
+        document.write("<h3>Animal is:"+animals[i]+"</h3>");
+       }
+
+       animals.push("cat");//adding one more value. In javascript array size can change.
+       document.write("<h3>All Animals is:"+animals+"</h3>");
+
+       var myarr = ["Ram", false, 8.23, "jio", 898, 239878927389273]; //in javascript array can have different datatype values'
+       for(var i=0;i<myarr.length;i++)
+       {
+        document.write("<h3>Value is:"+myarr[i]+"</h3>");
+       }
+
+       var myarr2 = new Array("man", "women", "child");
+       for(var i=0;i<myarr2.length;i++)
+       {
+        document.write("<h3>each is:"+myarr2[i]+"</h3>");
+       }
+
+       var myarr3;
+       myarr3 = new Array("hello", "deii", "woww");
+       for(var i=0;i<myarr3.length;i++)
+       {
+        document.write("<h3>saying is:"+myarr3[i]+"</h3>");
+       }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
