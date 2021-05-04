@@ -189,3 +189,10 @@ arrays:
 var cars = ["bmw", "swift", "volvo"];
 or
 var cars = new Array("bmw", "swift", "volvo");
+
+
+Object:
+------
+var name = {
+
+}

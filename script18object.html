@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       document.write("<h3>Object - First Way</h3>");
+       var Animals = {
+           name : "Lion",
+           height : 78,
+           isWild : true,
+           printAnimalDetails : function()
+           {
+                document.write("<h5>This animal name is dangerous</h5>");
+           },
+           giveAnimalName : function(mystr)
+           {
+               var res = mystr + "LION";
+                return res;
+           }
+       }
+       document.write("<h5>.."+Animals.name+"</h5>");
+       document.write("<h5>.."+Animals.height+"</h5>");
+       document.write("<h5>.."+Animals.isWild+"</h5>");
+       Animals.printAnimalDetails()
+       document.write("<h5>...."+Animals.giveAnimalName("Min")+"</h5>");
+
+       document.write("<h3>Object - Second Way</h3>");
+       function Birds(name, flyingHeight, color)
+       {
+           this.name = name;
+           this.flyingHeight = flyingHeight;
+           this.printColor = function(nest)
+           {
+            document.write("<h5>This bird "+this.name+" nest is:"+nest+"</h5>");
+           }
+           this.giveHeight = function()
+           {
+               return this.flyingHeight;
+           }
+       }
+       var bird1 = new Birds("Crow", 20, "black");
+       var bird2 = new Birds("Peacock", 10, "blue"); 
+       document.write("<h5>First bird is:"+bird1.name+"</h5>");
+       bird1.printColor("tree");
+       document.write("<h5>First bird height is:"+bird1.giveHeight()+"</h5>");
+       document.write("<h5>Second bird is:"+bird2.name+"</h5>");
+       bird2.printColor("land");
+       document.write("<h5>Second bird height is:"+bird2.giveHeight()+"</h5>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
