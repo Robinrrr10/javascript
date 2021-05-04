@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       document.write("<h3>Object</h3>");
+       var Animals = {                 
+           name : "Lion",
+           height : 78,
+           isWild : true,
+           printAnimalDetails : function()
+           {
+                document.write("<h5>This animal name is dangerous</h5>");
+           },
+           giveAnimalName : function(mystr)
+           {
+               var res = mystr + "LION";
+                return res;
+           }
+       }
+       
+       Animals.behaviour = "willkill"; //we can add new variable outside also
+       document.write("<h5>.."+Animals.behaviour+"</h5>");
+
+       Animals.behaviour = function()  //we can add functions outside also
+       {
+           document.write("<h5>hihihihi</h5>");
+       }
+
+       Animals.behaviour();
+
+       Animals.height = "man"; //we can change the datatype also
+       document.write("<h5>..."+Animals.height+"</h5>");
+
+       var nm = "This is normal string"; //This is normal string datatype
+       document.write("<h5>Type of nm is "+typeof(nm)+"</h5>");
+
+       var nm2 = new String();//creating string using object. Here it is object. it is not normal datatype
+       document.write("<h5>Type of nm2 is "+typeof(nm2)+"</h5>");
+      
+    </script>
+</head>
+<body>
+
+</body>
+</html>
