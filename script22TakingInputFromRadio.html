@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       function submitAge()
+       {
+            var el1 = document.getElementById("ma");
+            var el2 = document.getElementById("fe");
+            if(el1.checked) //check whether it is checked or not
+            {
+                alert("Gender is:" + el1.value );
+            } else if(el2.checked)
+            {
+                var no = el1.innerHTML;
+                alert("Gender is:" + el2.value );
+            } else{
+                alert("Gender is not selected")
+            }
+       }
+    </script>
+</head>
+<body>
+    Enter Gender:<br><br>
+    <input name="ag" type="radio" id="ma" value="male">Male</input><br>
+    <input name="ag" type="radio" id="fe" value="female">Female</input><br><br>
+    <button onclick="submitAge()">Submit</button>
+</body>
+</html>

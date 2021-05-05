@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       function submitSelect()
+       {
+            var sle = document.getElementById("sel");
+            alert(sle.options[sle.selectedIndex].value); 
+       }
+    </script>
+</head>
+<body>
+    <select id="sel">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="ECE">ECE</option>
+    </select>
+    <br><br>
+    <button onclick="submitSelect()">Submit</button>
+</body>
+</html>
