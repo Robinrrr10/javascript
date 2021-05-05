@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       function login()
+       {
+           var user = document.getElementById("uname").value;
+           var pass = document.getElementById("pwd").value;
+           if( user == pass)
+           {
+               document.getElementById("resMessage").innerHTML = "User and password are same. Please retry";
+           }
+           else
+           {
+                document.getElementById("resMessage").innerHTML = "User and password not same. We can login"
+           }
+       }
+       function loginAlt()
+       {
+        var user = document.getElementById("uname").value;
+           var pass = document.getElementById("pwd").value;
+           if( user == pass)
+           {
+              alert(user + ". You has same password as like username");
+           }
+           else
+           {
+                alert(user + ". You has different password other username. we can go ahead");
+           }
+       }
+    </script>
+</head>
+<body>
+    <input type="text" id="uname" placeholder="user name" /><br><br>
+    <input type="password" id="pwd" placeholder="password" /><br><br>
+    <button onclick="login()">Login</button><br><br>
+    <button onclick="loginAlt()">Login alert</button><br><br>
+    <h5 id="resMessage"></h5>
+</body>
+</html>
