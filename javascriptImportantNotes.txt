@@ -191,8 +191,11 @@ or
 var cars = new Array("bmw", "swift", "volvo");
 
 
-Object:
-------
-var name = {
 
-}
+Object:
+-
+
+
+Dom manipulation:
+
+

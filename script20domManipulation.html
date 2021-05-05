@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       function showMyAlert()
+       {
+           alert("This is alert message"); //This is show alert message
+       }
+       function changeTheTextInHead()
+       {
+           document.getElementById("head3").innerHTML = "New Heading daa.."; // this will change the text
+       }
+       function myCusAlt()
+       {
+           var myTxt = document.getElementById("head3").innerHTML;
+           alert(myTxt);
+       }
+    </script>
+</head>
+<body>
+    <button onclick="showMyAlert()">Show alert</button>
+    <h3 id="head3">This is header three</h3>
+    <button onclick="changeTheTextInHead()">Change above Heading</button>
+    <button onclick="myCusAlt()">Show customer alert</button>
+</body>
+</html>
