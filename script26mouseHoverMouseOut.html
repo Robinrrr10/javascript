@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function newImg()
+        {
+            document.getElementById("imone").src = "files/apple.jpg";
+        }
+        function oldImg()
+        {
+            document.getElementById("imone").src = "files/image1.jpg";
+        }
+    </script>
+</head>
+<body>
+    <p>Keep your cursor on image</p>
+    <img id="imone" onmouseover="newImg()" onmouseout="oldImg()" src="files/image1.jpg" />
+</body>
+</html>
