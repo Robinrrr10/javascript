@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function changeParaStyle()
+        {
+            var allParas = document.getElementsByTagName("p");
+            for(var i=0;i<allParas.length;i++)
+            {
+                allParas[i].style.color = "blue";
+                allParas[i].style.fontWeight = "bold";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <button onclick="changeParaStyle()">Submit</button>
+</body>
+</html>

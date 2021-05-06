@@ -198,4 +198,5 @@ Object:
 
 Dom manipulation:
 
+onclick  
 

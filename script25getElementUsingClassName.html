@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function changeStyle()
+        {
+            var allParas = document.getElementsByTagName("p");
+            for(var i=0;i<allParas.length;i++)
+            {
+                allParas[i].style.color = "red";
+            }
+            var clstag = document.getElementsByClassName("mcls");
+            for(var i=0; i<clstag.length;i++)
+            {
+                clstag[i].style.background = "blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p class="mcls">This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p class="mcls">This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <a class="mcls" href="#">link</a>
+    <button onclick="changeStyle()">Submit</button>
+</body>
+</html>
