@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function formsubmit()
+        {
+           var user = document.getElementById("uname");
+           var pss = document.getElementById("pass");
+           if(user.value == "" && pss.value == "")
+           {
+               alert("Empty credential")
+               return false;
+           }
+           else if(user.value == "" && pss.value != "")
+           {
+               user.style.border = "solid 2px red";
+               return false;
+           }
+           else if(user.value != "" && pss.value == "")
+           {
+               pss.style.border = "solid 2px red";
+               return false;
+           }else if(user.value != "" && pss.value.length < 5)
+           {
+               pss.style.border = "solid 2px red";
+               document.getElementById("plab").style.visibility = "visible";
+               return false;
+           }
+           else{
+               return true;
+           }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return  formsubmit()" action="files/mypage.html">
+        <input id="uname" type="text" placeholder="username" /><br><br>
+        <input id="pass" type="password" placeholder="password" /><label id="plab" style="color:red;visibility:hidden;">Invalid</label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
