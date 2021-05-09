@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function formsubmit()
+        {
+            var usernam = document.getElementById("uname").value;
+            //regx = new RegExp("E00"); //This is also like same. 
+            //var regx = /E00/; 
+            //var regx = /E00/i;  //This is case insensitive
+            //var regx = /[abc]imple/; // First letter can be a or b or c and rest should be imple
+            //var regx = /[a-e]imple/; //First letter can be a or b or c or d or e and rest should be imple
+            //var regx = /[a-e A-E]imple/; //First letter can be a or b or c or d or e or A or B or C or D or E and rest should be imple 
+            //var regx = /[^a-e]imple]/; //First letter should be any char other than a or b or b or c or d or e and rest should be imple
+            //var regx = /[2-5]imple/; //First letter can be 2 or 3 or 4 or 5 and rest should be imple
+            var regx = /[2-5]i[a-e]j/; //First letter can be 2 or 3 or 4 or 5 and then should be i and next should be a or b or c or d or e and next should be j
+
+            if(regx.test(usernam)){  //this will check whether the regular expression matchs string or not //If string contains E00 it will give true or else false
+                alert("valid username");
+            }
+            else
+            {
+                alert("invalid username");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input id="uname" type="text" placeholder="username" /><br><br>
+        <button onclick="formsubmit()" type="submit">Submit</button>
+    </form>
+</body>
+</html>
