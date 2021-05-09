@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function formsubmit()
+        {
+            var usernam = document.getElementById("uname").value;
+            var regx = /E00/;  //This is to create regular expression  //To give regular expresion it should start with slash. Here it is case sensitive. For case insensitive we need to add i at last Eg: /E00/i
+            if(regx.test(usernam)){  //this will check whether the regular expression matchs string or not //If string contains E00 it will give true or else false
+                alert("valid username");
+            }
+            else
+            {
+                alert("invalid username");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input id="uname" type="text" placeholder="username" /><br><br>
+        <button onclick="formsubmit()" type="submit">Submit</button>
+    </form>
+</body>
+</html>
