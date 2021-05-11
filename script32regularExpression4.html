@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            var email = document.getElementById("em").value;
+            var regx = /([a-z0-9\.-_]+)@([a-z0-9-_]+)\.([a-z]{2,8})(\.[a-z]{2,8})?/; //  \d means digit 
+            if(regx.test(email))
+            {
+                document.getElementById("lab").innerHTML="Valid";
+                document.getElementById("lab").style.visibility="visible";
+                document.getElementById("lab").style.color="green";
+            }
+            else
+            {
+                document.getElementById("lab").innerHTML="Invalid Email";
+                document.getElementById("lab").style.visibility="visible";
+                document.getElementById("lab").style.color="red";
+                document.getElementById("em").style.border="2px solid red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input id="em" type="text" placeholder="Email" /><br>
+        <label id="lab"></label><br>
+        <br>
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+</body>
+</html>
