@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            var mobileNo = document.getElementById("mob").value;
+            //var regx = /[6-9][0-9]{9}/; //This will check whether it contains mobiile 
+            //var regx = /^[6-9][0-9]{9}$/; //^ is for start and $ means it will end
+            var regx = /^[6-9]\d{9}$/; //  \d means digit 
+            if(regx.test(mobileNo))
+            {
+                document.getElementById("lab").innerHTML="Valid";
+                document.getElementById("lab").style.visibility="visible";
+                document.getElementById("lab").style.color="green";
+            }
+            else
+            {
+                document.getElementById("lab").innerHTML="Invalid";
+                document.getElementById("lab").style.visibility="visible";
+                document.getElementById("lab").style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input id="mob" type="text" placeholder="mobile" /><br>
+        <label id="lab"></label><br>
+        <br>
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+</body>
+</html>
