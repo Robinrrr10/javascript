@@ -200,3 +200,20 @@ Dom manipulation:
 
 onclick  
 
+
+
+Debugging:
+----
+
+In developer tool:
+Elements: will show the code of the web page and when hover it will high light
+Console: It is used to print console log. we can also use for some operation
+Source: It is for deugging. Eg: we can add some debug point and go step by step
+
+console.log("give logging string here");  //This is log in console
+
+if there is some issue or error it will show in console
+It will throw the exception in console
+
+
+

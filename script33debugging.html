@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        function addition()
+        {
+            var nmone = document.getElementById("num1").value;
+            var nmtwo = document.getElementById("num2").value;
+            //var result = parseInt(nmone) + parseInt(nmtwo);
+            var result = parseInt(nmonefada) + parseInt(nmtwo);
+            console.log(result)
+            document.getElementById("res").innerHTML = "Result is:" + result;
+        }
+    </script>
+</head>
+<body>
+        <h2>Check developer tool. Check element, console for log and source for debug</h2>
+        <input id="num1" type="text" placeholder="number1" /><br>
+        <br>
+        <input id="num2" type="text" placeholder="number2" /><br>
+        <h3 id="res"></h3>
+        <br>
+        <button onclick="addition()">Add</button>
+</body>
+</html>
