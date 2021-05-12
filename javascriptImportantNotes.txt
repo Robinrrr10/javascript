@@ -216,4 +216,10 @@ if there is some issue or error it will show in console
 It will throw the exception in console
 
 
-
+timing functions:
+---------------
+setTimeout() - used to execute function or statement after certain delay
+clearTimeout() - used to stop setTimeout inbetween
+setInterval() - used to execute statement or function repeatedly in given interval
+cleanInterval() - used to stop setInterval inbetween
+Above 4 functions are from windows

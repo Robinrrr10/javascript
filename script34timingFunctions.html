@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+        var idTim = 0;
+        var idInv = 0;
+        var seco = 0;
+        function prt(){
+            document.getElementById("distxt").innerHTML = "5 Sec completed";
+        }
+        function stt()
+        {
+            idTim= window.setTimeout(prt, 5000); //Give function name reference and milli sec 
+        }
+        function stp() 
+        {
+            window.clearTimeout(idTim);
+        }
+        function runningPrint()
+        {
+            document.getElementById("disSec").innerHTML = seco + " Sec";
+            seco++;
+        }
+        function sttInv()
+        {
+            idInv = window.setInterval(runningPrint, 1000);
+        }
+        function stpInv(){
+            window.clearInterval(idInv);
+        }
+        function stopTm(){
+            seco = 0;
+            document.getElementById("disSec").innerHTML = seco + " Sec";
+            window.clearInterval(idInv);
+        }
+    </script>
+</head>
+<body>
+        <h2>Click start and wait more than 5 sec</h2>
+        <h2>Click start and click stop before 5 sec</h2>
+        <button onclick="stt()">start</button>
+        <h3 id="distxt">some text</h3>
+        <button onclick="stp()">stop</button>
+        <br><br><br><br>
+        <h2>Stop watch</h2>
+        <button onclick="sttInv()">start</button>
+        <h3 id="disSec">some text</h3>
+        <button onclick="stpInv()">stop</button>
+        <button onclick="stopTm()">Clear Time</button>
+</body>
+</html>
