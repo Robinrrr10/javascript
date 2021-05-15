@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       var opacity = 1;
+       var invId = 0;
+       function fadeOut() {
+           invId = setInterval(hide, 200);
+       }
+       function hide() {
+           var img = document.getElementById("img1");
+           opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity")); //Number is used to convert string to number // As each browser behaviour differently to get opacity we used windows and others to get proper opacity value of image
+           console.log("Current opacity value is:" + opacity);
+           if(opacity>0){
+               opacity = opacity - 0.1;
+               img.style.opacity = opacity;
+           }
+           else{
+               clearInterval(invId);
+           }
+       }
+       function fadeIn() {
+           invId = setInterval(show, 200);
+       }
+       function show() {
+           var img = document.getElementById("img1");
+           opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity")); //Number is used to convert string to number // As each browser behaviour differently to get opacity we used windows and others to get proper opacity value of image
+           console.log("Current opacity value is:" + opacity);
+           if(opacity<1){
+               opacity = opacity + 0.1;
+               img.style.opacity = opacity;
+           }
+           else{
+               clearInterval(invId);
+           }
+       }
+    </script>
+</head>
+<body>
+        <h2>Click Fade out or Fade In</h2>
+        <button onclick="fadeOut()">Fade out</button>
+        <br><br>
+        <img id="img1" src="files/image1.jpg" />
+        <br><br>
+        <button onclick="fadeIn()">Fade in</button>
+</body>
+</html>

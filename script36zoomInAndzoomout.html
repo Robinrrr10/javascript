@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>my title</title>
+    <script type="text/javascript">
+       var imageWidth = 50;
+       var invId = 0;
+       var addVal = 2;
+       function increase(){
+        clearInterval(invId);
+        invId = setInterval(zoomIn, 20);
+       }
+       function zoomIn()
+       {
+           if(imageWidth < 200){
+               imageWidth = imageWidth + addVal;
+               document.getElementById("img1").width = imageWidth;
+               console.log("width settting is:" + imageWidth);
+           }
+           else
+           {
+               clearInterval(invId);
+           }
+       }
+
+       function decrease(){
+        clearInterval(invId);
+        invId = setInterval(zoomOut, 20);
+       }
+       function zoomOut()
+       {
+           if(imageWidth > 50){
+               imageWidth = imageWidth - addVal;
+               document.getElementById("img1").width = imageWidth;
+               console.log("width settting is:" + imageWidth);
+           }
+           else
+           {
+               clearInterval(invId);
+           }
+       }
+    </script>
+</head>
+<body>
+        <h2>hover mouse on image</h2>
+        <br><br>
+        <img id="img1" onmouseover="increase()" onmouseout="decrease()" src="files/apple.jpg" width="50" />
+</body>
+</html>
