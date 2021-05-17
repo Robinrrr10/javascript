@@ -12,6 +12,12 @@ react vr used to create virtual reality applications
 tensorflow js used for machine learning framework
 
 
+
+JAVASCRIPT with UI
+------------------
+------------------
+
+
 HTML, CSS, JAVASCRIPT
 
 Document Object Model (DOM)
@@ -223,3 +229,43 @@ clearTimeout() - used to stop setTimeout inbetween
 setInterval() - used to execute statement or function repeatedly in given interval
 cleanInterval() - used to stop setInterval inbetween
 Above 4 functions are from windows
+
+
+
+------------------------------------------------------
+
+https://www.youtube.com/watch?v=PlbupGCBV6w&list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4
+
+JAVASCRIPT TUTORIAL
+------------------
+------------------
+
+node --version       //To check node version or to check whether node is installed or not
+
+node filename.js      //To run javascript file
+
+
+Install node js 
+node --version   //to check whether noderr is installed or not
+
+If node go to browser and type "noder js download"
+
+then install
+
+After installing giving below command to check again
+
+node --version
+
+
+To run javascript file give below command:
+node filename.js
+
+
+For IDE use vscode
+if not available download and use visual code
+
+
+
+
+
+
