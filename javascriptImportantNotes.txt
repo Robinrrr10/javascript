@@ -266,6 +266,18 @@ if not available download and use visual code
 
 
 
+Variable:
+
+let num = 3   //let is the keyword used to declare variable. This is the new practise in javascript. So lets follow that
+
+We can directly declare any datatype for the variable
+String value should be inside single quote or double quote
+Variable value can change. We can change the value inbetween 
+variable name can have alphabet, numbers or $ or _
+
+
+
+
 
 
 
