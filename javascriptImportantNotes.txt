@@ -267,6 +267,7 @@ if not available download and use visual code
 
 
 Variable:
+--------
 
 let num = 3   //let is the keyword used to declare variable. This is the new practise in javascript. So lets follow that
 
@@ -277,6 +278,29 @@ variable name can have alphabet, numbers or $ or _
 
 
 
+Constants:
+----------
+
+const is the keyword used to declare constant variable
+The value of constant variable cannot change
+
+
+Datatype:
+1. Primitive datatypes
+2. Objects
+
+Primitive:
+1. number
+2. String
+3. Boolean
+4. Null
+5. Undefined
+6. Symbol
+
+
+let hexDecNum = 0xf
+let oneLakh = 1_00_0000
+let bigInNumber = 10367846237867826n   //n at the end
 
 
 
