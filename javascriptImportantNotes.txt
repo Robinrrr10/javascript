@@ -304,4 +304,16 @@ let bigInNumber = 10367846237867826n   //n at the end
 
 
 
+type conversion
+--------------
+
+let num = String(6)        //String(value) - this method is to convert to string
+let str = Number("1234")   //Number(value) - this method is to convert to number
+
+
+Type coversion
+--------------
+
+
+
 
