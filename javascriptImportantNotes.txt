@@ -315,5 +315,21 @@ Type coversion
 --------------
 
 
+arithmetic operator
+
+relational operator
+
+
+
+
+
+comparsion:
+
+IMPORTANT::
+In javascript always use === for comparision operator. === will compare values and datatype. but == will compare only value. not datatype
+7 == 7        => true
+"7" == 7      => true
+ "7" === 7    => false
+
 
 
