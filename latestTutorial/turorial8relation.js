@@ -44,8 +44,17 @@ console.log(result)
 let va1 = "7"
 let va2 = 7
 result = va1 == va2  //== will compare only the value
+console.log(result)
 result = va1 === va2 //=== will compare value and datatype
 console.log(result)
 //IMPORTANT : All ways use === for comparing. Only this will give correct value
+
+let v1 = '' 
+let v2 = false
+result = v1 == v2 // '' is false => false == false //This compares only value
+console.log(result)
+result = v1 === v2 //This compares value and datatype. So always use ===
+console.log(result)
+
 
 
