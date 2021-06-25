@@ -331,5 +331,14 @@ In javascript always use === for comparision operator. === will compare values a
 "7" == 7      => true
  "7" === 7    => false
 
+javascript will ignore if there is comma(?) in last property of object
+
+we can use ? to check go forward only if the object/property is available
+
+? - very important
+
+delete key word is used to delete object or property inside object
+Eg: delete student.age
+
 
 
