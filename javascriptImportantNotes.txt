@@ -342,3 +342,29 @@ Eg: delete student.age
 
 
 
+We can iterate each element in object
+
+
+function functionName()
+{
+
+}
+
+
+function funationName(param1, param2)
+{
+	return "hellow world";
+}
+
+
+
+
+function expression
+-------
+
+let add = function(num1, num2)
+    {
+        return num1 + num2;
+    }
+
+let sum = add; //Assiging function to new function sum
