@@ -368,3 +368,15 @@ let add = function(num1, num2)
     }
 
 let sum = add; //Assiging function to new function sum
+
+
+global variable:
+-------
+variable created outside function is called as global variable.
+We can use this variable inside and outside of the function
+
+local variable:
+------
+Variable created inside the function is called local variable
+We cannot use local variable outside that function. we can use only inside that function
+
