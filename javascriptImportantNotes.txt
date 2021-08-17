@@ -380,3 +380,17 @@ local variable:
 Variable created inside the function is called local variable
 We cannot use local variable outside that function. we can use only inside that function
 
+
+
+Arrow functions // Here instead of function keyword we will use () followed by arrow => //No other difference
+--------------
+
+let add = (num1, num2) =>
+    {
+        return num1 + num2;
+    }
+
+
+If arrow function has only one line and that one line is return, then we can also write in one line
+let add = (num1, num2) => num1 + num2
+
