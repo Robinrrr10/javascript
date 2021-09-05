@@ -394,3 +394,21 @@ let add = (num1, num2) =>
 If arrow function has only one line and that one line is return, then we can also write in one line
 let add = (num1, num2) => num1 + num2
 
+
+
+Methods or Functions
+--------------------
+
+let student = {
+    name: 'Ram',
+    age: 26,
+    mark: 89,
+
+    display: function() {                    //method or function
+        console.log("Hello man")
+    }
+
+}
+
+student.display()               //calling the function
+
