@@ -412,3 +412,22 @@ let student = {
 
 student.display()               //calling the function
 
+
+this keyword
+------------
+
+
+let student = {
+    name: 'Ram',
+    age: 26,
+    mark: 89,
+
+    display: function() {                    
+        console.log(this.name)
+    }
+
+}
+
+student.display()   
+
+
