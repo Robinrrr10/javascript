@@ -460,3 +460,26 @@ console.log(st2)
 ----
 
 
+Array
+---
+
+let values = new Array(); //to create empty array
+
+or 
+
+let values =[];        //to create empty array
+
+let values = [3, 5, 9]        //to create array with set of values
+
+values.length      //This will fetch length of the array
+
+values.push(5) //This will add new element to the array
+
+values[0]    //Using index we can fetch particular values in the array
+
+--
+
+
+
+
+
