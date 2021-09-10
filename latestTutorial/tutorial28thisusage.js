@@ -37,5 +37,5 @@ function getHighCpuLaptop(laptop1, laptop2){
 laptop.getConfig()
 otherLaptop.getConfig()
 
-getHighCpuLaptop(laptop, otherLaptop)
-laptop.compare(otherLaptop)
+getHighCpuLaptop(laptop, otherLaptop) //this method takes two object and compare
+laptop.compare(otherLaptop) //compare method is available only in laptop and it is taking one object and comparing himself with that object

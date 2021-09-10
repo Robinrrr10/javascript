@@ -430,4 +430,33 @@ let student = {
 
 student.display()   
 
+--
+
+constructor function
+-------------------
+
+constructor function starts with upper case
+
+Constructor function will return the object. So dont secify any return statement. even if we give return type, it wont work.
+
+Eg:
+
+function Student(name, age) {         //This is constructor function. function name start with upper case
+    this.name = name
+    this.age = age
+    this.display = function(){
+        console.log("hi hello")
+    }
+}
+
+st1 = new Student("Ram", 28) //constructor function will be called along with new keyword
+st2 = new Student("Dom", 34)
+
+st1.display()
+console.log(st1)
+console.log(st2)
+
+
+----
+
 
