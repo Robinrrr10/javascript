@@ -500,6 +500,17 @@ myarr[6]()      //to call function in the array
 --
 
 
+Methods in array:
+
+push //to add new element in last
+pop //to remove element in last
+shift // to remove element in begining
+unshift //to add new element in beginning
+splice(index) //to remove all element from index
+splice(index, length) //to remove element from index to length
+splice(index, length, newelem) //to remove element from index to length and then add new element
+
+
 
 
 
