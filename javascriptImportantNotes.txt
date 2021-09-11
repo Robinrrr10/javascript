@@ -477,6 +477,26 @@ values.push(5) //This will add new element to the array
 
 values[0]    //Using index we can fetch particular values in the array
 
+
+We can have array of different datatype
+
+Eg:
+let values = [3, 5, 9, "hi", "hello", "man", 5.6] 
+
+We can also have any object of function in an array
+let myarr = [3, 2, 'hello', 4.5, { name: 'ram'}, "This", function(){console.log("heeee")} ];
+
+
+
+Eg:
+
+let myarr = [3, 2, 'hello', 4.5, { name: 'ram'}, "This", function(){console.log("heeee")} ];
+console.log(myarr)
+myarr[7] = "newda"; //we can add new value  by giving index also
+console.log(myarr)
+console.log(myarr[4].name) //to call the param inside 
+myarr[6]()      //to call function in the array
+
 --
 
 
