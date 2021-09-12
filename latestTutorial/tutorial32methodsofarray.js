@@ -22,5 +22,5 @@ arr.splice(3, 2) //to remove two element from index 3
 console.log(arr)
 arr.push(34, 1, 91)
 console.log(arr)
-arr.splice(3, 2, 67) //to remove two element from 3rd index and to insert 67 in between
+arr.splice(3, 2, 67, 40) //to remove two element from 3rd index and to insert 67 and 40 in between
 console.log(arr)
