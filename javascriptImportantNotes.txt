@@ -534,3 +534,31 @@ for(let key in arr) { // for in will assign each key for every iteration. Here k
 
 ---
 
+array destructing:
+
+let nums = [2, 10, 9, 5]
+let [a, b, c, d] = nums //This will asign each value in array to each variable
+
+
+let [a, b,, d] = nums //This will skip 3rd element which is index 3 and asign rest of the elements
+
+
+
+let a = 4
+let b = 6
+
+[b, a] = [a, b]         //this is swappe the value in element //Swapping using destructing
+
+
+let words = "hi hello how are you".split(" ")                  //This will split the sentence into words from spaces and gives in an array
+
+
+
+
+three dots means rest of the elements
+
+let nums = [2, 10, 9, 5, 8, 11, 3, 7, 23, 12]
+let [a, b, c, ...d]       // ...d means all rest of element will be assigned to d array
+
+
+----
