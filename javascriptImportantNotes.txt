@@ -691,3 +691,9 @@ map.forEach((v, k) => {   //Here value will comes as first param and key will co
 })
 
 ---
+
+recursion:
+
+function calling the same function is called recursion
+
+---
